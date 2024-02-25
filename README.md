@@ -58,11 +58,11 @@
 
 ```mermaid
 graph LR;
-  untracked (неотслеживаемый) -- "git add" --> staged (в списке на коммит)+tracked;
-  staged (в списке на коммит)+tracked) -- "git commit" --> tracked (отслеживаемый);
-  tracked (отслеживаемый) -- "Изменения" --> modified (изменённый);
-  modified (изменённый) -- "git add" --> staged (в списке на коммит)+tracked;
-  staged (в списке на коммит)+tracked -- "Изменения" --> modified (изменённый);
+  untracked(неотслеживаемый)-- "git add" -->staged(в списке на коммит)+tracked
+  staged(в списке на коммит)+tracked--"git commit"-->tracked(отслеживаемый)
+  tracked(отслеживаемый)-- "Изменения" -->modified(изменённый)
+  modified(изменённый)--"git add"-->staged(в списке на коммит)+tracked
+  staged(в списке на коммит)+tracked--"Изменения"-->modified(изменённый)
 ``` 
 
 
